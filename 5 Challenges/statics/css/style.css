@@ -1,0 +1,54 @@
+.Parent-Challenge-1, .Challenge-1-main, .Parent-Challenge-2,
+.Parent-Challenge-3, .Challenge-3, .Parent-Challenge-4, .Parent-Challenge-5{
+    display: flex;
+    justify-content: space-around;
+}
+
+.Challenge-1 , .Mid-Challenge-2, .Challenge-3-main, .Challenge-4-main, .Challenge-5-main{
+    width:75%;
+    text-align: center;
+}
+
+.Challenge-1-buttons, .Challenge-1-main, .Challenge-3, .Challenge-2, .Challenge-4,
+.Challenge-5-tail, th{
+    padding: 10px;
+}
+
+.Challenge-1, .Challenge-1-buttons, .Mid-Challenge-2, .Challenge-3-main,
+.Challenge-4-main, .Challenge-5-main, .Challenge-5-middle div, table, td, th{
+    border: 1px  solid black;
+}
+
+.Challenge-5-foot, .Challenge-5-middle, .Challenge-5-head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.Challenge-3 img:hover{
+    box-shadow: 6px 6px 15px grey;
+}
+
+.Challenge-2 img {
+    margin: 10px auto;
+    box-shadow: 6px 6px 15px grey;
+}
+
+
+.Challenge-5-middle div{
+    height: 580px;
+    width: 50%;
+}
+
+.Challenge-5-middle div img {
+    width: 20%;
+    margin: 5px;
+}
+
+.Challenge-5-middle, .Challenge-5-tail {
+    background: url(../images/greentable.png);
+    color: #fff;
+}
+.Challenge-5-head{
+    flex-direction: column;
+}
