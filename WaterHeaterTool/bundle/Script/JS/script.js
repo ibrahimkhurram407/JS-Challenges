@@ -121,4 +121,3 @@ let result = calculateEquilibriumTime(
 );
 document.getElementById('EST').textContent = `Estimated time to reach equilibrium: ${result.time.toFixed(2)} seconds | `;
 document.getElementById('resultTemp').textContent = `Resultant temperature: ${(Math.round(result.temperature))}°C`;
-}
