@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        justify-items: center;
+        align-items: center;
+        height: 300px;
+        background-color: #f0f0f0;
+      }
+
+      .item {
+        background-color: #4286f4;
+        color: white;
+        font-size: 24px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        background-color: #f0f0f0;
+      }
+
+      .flex-item {
+        background-color: #4286f4;
+        color: white;
+        font-size: 24px;
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid vs. Flexbox</h1>
+
+    <div class="container">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+      <div class="item">Item 4</div>
+      <div class="item">Item 5</div>
+      <div class="item">Item 6</div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+      <div class="flex-item">Item 4</div>
+      <div class="flex-item">Item 5</div>
+      <div class="flex-item">Item 6</div>
+    </div>
+
+    <h2>Grid</h2>
+    <p>Grid is a layout system that allows you to create complex layouts with rows and columns. Here are some of the most common style attributes:</p>
+    <ul>
+      <li><strong>display:</strong> set to <code>grid</code> to enable grid layout.</li>
+      <li><strong>grid-template-columns:</strong> specifies the width of each column.</li>
+      <li><strong>grid-gap:</strong> specifies the space between grid items.</li>
+      <li><strong>justify-items:</strong> specifies how grid items are aligned horizontally.</li>
+      <li><strong>align-items:</strong> specifies how grid items are aligned vertically.</li>
+    </ul>
+
+    <h2>Flexbox</h2>
+    <p>Flexbox is a layout system that allows you to easily align and distribute content within a container. Here are some of the most common style attributes:</p>
+    <ul>
+      <li><strong>display:</strong> set to <code>flex</code> to enable flexbox layout.</li>
+      <li><strong>justify-content:</strong> specifies how content is aligned horizontally within the container.</li>
+      <li><strong>align-items:</strong> specifies how content is aligned vertically within the container.</li>
+    </ul>
+  </body>
+</html>
