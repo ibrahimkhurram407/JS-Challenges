@@ -29,3 +29,4 @@ expandAllButton.addEventListener("click", () => {
   const navbarHeight = document.querySelector('.navbar').offsetHeight;
   const questionTop = document.querySelector(question).offsetTop - navbarHeight - 20; // adjust for 10px above question
   window.scrollTo({top: questionTop, behavior: 'smooth',duration: 1000});
+}
