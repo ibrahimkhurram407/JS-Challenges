@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Aptech Assignment</title>
-    <style>
-        body {
-            padding-top: 80px;
-            background-color: darkgrey;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        button {
-            margin-top: 10px;
-        }
-
-        .nav-item a{
-            color:#fff;
-        }
-        .nav-item:hover {
-            cursor: pointer;
-        }
-        .accordion {
-            margin-bottom: 200px;
-        }
-
-        .result {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            align-items: center;
-            text-align: center;
-            border-radius: 10px;
-            border-color:chartreuse;
-            border-style:dotted;
-            height: 200px;
-            width: 400px;
-        }
-
-        .form-control {
-            width: 70%;
-        }
-    </style>
+    <link rel="stylesheet" href="./bundle/css/main.css">
 </head>
 
 <body>
@@ -56,11 +17,16 @@
             <div class="container">
                 <a class="navbar-brand" href="#">Task Assignment</a>
                 <ul class="nav nav-pills">
-                    <li class="nav-item"><a onclick="scrollToQuestion('#question1')" class="nav-link">Question 1</a></li>
-                    <li class="nav-item"><a onclick="scrollToQuestion('#question2')" class="nav-link">Question 2</a></li>
-                    <li class="nav-item"><a onclick="scrollToQuestion('#question3')" class="nav-link">Question 3</a></li>
-                    <li class="nav-item"><a onclick="scrollToQuestion('#question4')" class="nav-link">Question 4</a></li>
-                    <li class="nav-item"><a onclick="scrollToQuestion('#question5')" class="nav-link">Question 5</a></li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question1')" class="nav-link">Question 1</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question2')" class="nav-link">Question 2</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question3')" class="nav-link">Question 3</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question4')" class="nav-link">Question 4</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question5')" class="nav-link">Question 5</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
                             aria-expanded="false">Dropdown</a>
@@ -93,7 +59,7 @@
     </header>
 
     <main class="container">
-        <button id="expand-all-button" type="button" class="btn btn-dark">Expand/Collapse All</button>
+        <button id="expand-all-button" type="button" class="btn btn-dark expand-btn">Expand/Collapse All</button>
         <div class="accordion" id="accordion" data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="500"
             tabindex="0">
             <div class="accordion-item" id="question1">
@@ -120,9 +86,10 @@
                             <p><b>Sample Output</b></p>
                             <p style="margin-top: -20px;">50</p>
                             <script src="./bundle/scripts/q1.js"></script>
-                            <div class="result">
+                            <div class="q1-result">
                                 <div>
-                                    <h6>Input the amount of Computers in the Office to Calculate the amount of Monitors needed</h6>
+                                    <h6>Input the amount of Computers in the Office to Calculate the amount of Monitors
+                                        needed</h6>
                                 </div>
                                 <input id="q1input" class="form-control" type="text">
                                 <button class="btn btn-primary" onclick="q1Main()">Calculate</button>
@@ -151,7 +118,14 @@
                             <p style="margin-top:-20px;">20</p>
                             <p><b>Sample Output</b></p>
                             <p style="margin-top:-20px;">true</p>
-                            <button class="btn btn-primary" onclick="location.href='./Q/2.html'">Answer</button>
+                            <script src="./bundle/scripts/q2.js"></script>
+                            <div class="q2-result">
+                                <div>
+                                    <h6>Enter Your age</h6>
+                                </div>
+                                <input id="q2input" class="form-control" type="text">
+                                <button class="btn btn-primary" onclick="q2Main()">Calculate</button>
+                            </div>
                         </section>
                     </div>
                 </div>
@@ -315,7 +289,7 @@
             </div>
 
             <!-- Question 9 -->
-            <div class="accordion-item"  id="question9">
+            <div class="accordion-item" id="question9">
                 <h2 class="accordion-header" id="headingNine">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
@@ -333,7 +307,7 @@
             </div>
 
             <!-- Question 10 -->
-            <div class="accordion-item"  id="question10">
+            <div class="accordion-item" id="question10">
                 <h2 class="accordion-header" id="headingTen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
@@ -351,7 +325,7 @@
             </div>
 
             <!-- Question 11 -->
-            <div class="accordion-item"  id="question11">
+            <div class="accordion-item" id="question11">
                 <h2 class="accordion-header" id="headingEleven">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
@@ -368,7 +342,7 @@
                 </div>
             </div>
             <!-- Question 12 -->
-            <div class="accordion-item"  id="question12">
+            <div class="accordion-item" id="question12">
                 <h2 class="accordion-header" id="headingTwelve">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
@@ -386,7 +360,7 @@
             </div>
 
             <!-- Question 13 -->
-            <div class="accordion-item"  id="question13">
+            <div class="accordion-item" id="question13">
                 <h2 class="accordion-header" id="headingThirteen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
@@ -404,7 +378,7 @@
             </div>
 
             <!-- Question 14 -->
-            <div class="accordion-item"  id="question14">
+            <div class="accordion-item" id="question14">
                 <h2 class="accordion-header" id="headingFourteen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
@@ -422,7 +396,7 @@
             </div>
 
             <!-- Question 15 -->
-            <div class="accordion-item"  id="question15">
+            <div class="accordion-item" id="question15">
                 <h2 class="accordion-header" id="headingFifteen">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
@@ -442,73 +416,73 @@
             <!-- Question 16 -->
             <div class="accordion-item" id="question16">
                 <h2 class="accordion-header" id="headingSixteen">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
-                    <header>
-                    <h2>Question 16</h2>
-                    </header>
-                </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                        <header>
+                            <h2>Question 16</h2>
+                        </header>
+                    </button>
                 </h2>
                 <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
-                data-bs-parent="#accordion">
-                <div class="accordion-body">
-                    <!-- Description here -->
-                </div>
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <!-- Description here -->
+                    </div>
                 </div>
             </div>
             <!-- Question 17 -->
             <div class="accordion-item" id="question17">
                 <h2 class="accordion-header" id="headingSeventeen">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
-                    <header>
-                    <h2>Question 17</h2>
-                    </header>
-                </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                        <header>
+                            <h2>Question 17</h2>
+                        </header>
+                    </button>
                 </h2>
                 <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
-                data-bs-parent="#accordion">
-                <div class="accordion-body">
-                    <!-- Description here -->
-                </div>
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <!-- Description here -->
+                    </div>
                 </div>
             </div>
             <!-- Question 18 -->
             <div class="accordion-item" id="question18">
                 <h2 class="accordion-header" id="headingEighteen">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
-                    <header>
-                    <h2>Question 18</h2>
-                    </header>
-                </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                        <header>
+                            <h2>Question 18</h2>
+                        </header>
+                    </button>
                 </h2>
                 <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
-                data-bs-parent="#accordion">
-                <div class="accordion-body">
-                    <!-- Description here -->
-                </div>
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <!-- Description here -->
+                    </div>
                 </div>
             </div>
             <!-- Question 19 -->
             <div class="accordion-item" id="question19">
                 <h2 class="accordion-header" id="headingNineteen">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
-                    <header>
-                    <h2>Question 19</h2>
-                    </header>
-                </button>
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                        <header>
+                            <h2>Question 19</h2>
+                        </header>
+                    </button>
                 </h2>
                 <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
-                data-bs-parent="#accordion">
-                <div class="accordion-body">
-                    <!-- Description here -->
-                </div>
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <!-- Description here -->
+                    </div>
                 </div>
             </div>
             <!-- Question 20 -->
-            <div class="accordion-item"  id="question20">
+            <div class="accordion-item" id="question20">
                 <h2 class="accordion-header" id="headingTwenty">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
@@ -525,7 +499,7 @@
                 </div>
             </div>
             <!-- Question 21 -->
-            <div class="accordion-item"  id="question21">
+            <div class="accordion-item" id="question21">
                 <h2 class="accordion-header" id="headingTwentyOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
@@ -542,7 +516,7 @@
                 </div>
             </div>
             <!-- Question 22 -->
-            <div class="accordion-item"  id="question22">
+            <div class="accordion-item" id="question22">
                 <h2 class="accordion-header" id="headingTwentyTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
@@ -559,7 +533,7 @@
                 </div>
             </div>
             <!-- Question 23 -->
-            <div class="accordion-item"  id="question23">
+            <div class="accordion-item" id="question23">
                 <h2 class="accordion-header" id="headingTwentyThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
@@ -631,4 +605,5 @@
     <script src="./bundle/scripts/front-end.js"></script>
 
 </body>
+
 </html>
