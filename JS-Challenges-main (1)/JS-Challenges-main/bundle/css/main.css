@@ -1,0 +1,81 @@
+.background-prac {
+    /* //sdfadsf */
+}
+
+body {
+    padding-top: 80px;
+    background-color: darkgrey;
+    background-image: url(https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.nav-item a{
+    color:#fff;
+}
+.nav-item:hover {
+    cursor: pointer;
+}
+.accordion {
+    margin-bottom: 200px;
+}
+
+/* .q1-result {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+} */
+
+.q1-result, .q2-result, .q3-result{
+    border-radius: 10px;
+    border-color:chartreuse;
+    border-style:dotted;
+}
+
+.q1-result, .q2-result, .q3-result{
+    height: 200px;
+    width: 400px;
+    padding: 10px;
+}
+
+.q2-result, .q1-result, .q3-result {
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+    justify-content: center;
+    align-items: center;
+}
+
+.q2-result div h6, .q1-result div h6, .q3-result div h6{
+    width: 100%;
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+
+.q2-result input, .q1-result input, .q3-result input{
+    border: solid rgb(128, 128, 128);
+    border-width: 1px;
+}
+
+.q1-result button, .q2-result button, .q3-result button{
+    width: 110px;
+}
+
+.form-control {
+    width: 70%;
+    
+}
+
+.expand-btn {
+    margin: 20px 0px 5px 0px;
+}

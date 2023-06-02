@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title>Aptech Assignment</title>
+    <link rel="stylesheet" href="./bundle/css/main.css">
+</head>
+
+<body>
+    <header>
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Task Assignment</a>
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question1')" class="nav-link">Question 1</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question2')" class="nav-link">Question 2</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question3')" class="nav-link">Question 3</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question4')" class="nav-link">Question 4</a>
+                    </li>
+                    <li class="nav-item"><a onclick="scrollToQuestion('#question5')" class="nav-link">Question 5</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-expanded="false">Dropdown</a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question6')">Question 6</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question7')">Question 7</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question8')">Question 8</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question9')">Question 9</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question10')">Question 10</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question11')">Question 11</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question12')">Question 12</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question13')">Question 13</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question14')">Question 14</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question15')">Question 15</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question16')">Question 16</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question17')">Question 17</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question18')">Question 18</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question19')">Question 19</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question20')">Question 20</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question21')">Question 21</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question22')">Question 22</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question23')">Question 23</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question24')">Question 24</a></li>
+                            <li><a class="dropdown-item" onclick="scrollToQuestion('#question25 ')">Question 25</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <button id="expand-all-button" type="button" class="btn btn-dark expand-btn">Expand/Collapse All</button>
+        <div class="accordion" id="accordion" data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="500"
+            tabindex="0">
+            <!-- Question 1 -->
+            <div class="accordion-item" id="question1">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <header>
+                            <h2>Question 1</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <section>
+                            <p>In the office, 5 monitors are connected to each computer.The first line of the given code
+                                takes the number of computers as input.</p>
+                            <p><b>Task</b></p>
+                            <p style="margin-top: -20px;">Complete the code to calculate and output the number of
+                                monitors to the
+                                console.</p>
+                            <p><b>Sample Input</b></p>
+                            <p style="margin-top: -20px;">10</p>
+                            <p><b>Sample Output</b></p>
+                            <p style="margin-top: -20px;">50</p>
+                            <script src="./bundle/scripts/q1.js"></script>
+                            <div class="q1-result">
+                                <div>
+                                    <h6>Input the amount of Computers in the Office to Calculate the amount of Monitors
+                                        needed</h6>
+                                </div>
+                                <input id="q1input" class="form-control" type="text">
+                                <button class="btn btn-primary" onclick="q1Main()">Calculate</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 2 -->
+            <div class="accordion-item" id="question2">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <header>
+                            <h2>Question 2</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <section>
+                            <p>You are given a program that takes the age of the user as input Complete the code to
+                                check if the user is an adult, and out put to the console the corresponding <b>boolean
+                                    value.</b></p>
+                            <p><b>Sample Input</b></p>
+                            <p style="margin-top:-20px;">20</p>
+                            <p><b>Sample Output</b></p>
+                            <p style="margin-top:-20px;">true</p>
+                            <script src="./bundle/scripts/q2.js"></script>
+                            <div class="q2-result">
+                                <div>
+                                    <h6>Enter Your age</h6>
+                                </div>
+                                <input id="q2input" class="form-control" type="text">
+                                <button class="btn btn-primary" onclick="q2Main()">Calculate</button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 3 -->
+            <div class="accordion-item" id="question3">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <header>
+                            <h2>Question 3</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Given a clock that measures 24 hours in a day, write a program that takes the hour as input.
+                            If the hour is in the rage of 0 to 12, output am to the console, and output pm if it's not.
+                        </p>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">13</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">pm</p>
+                        <script src="./bundle/scripts/q3.js"></script>
+                        <div class="q3-result">
+                            <div>
+                                <h6>Enter Hour Digit</h6>
+                            </div>
+                            <input id="q3input" class="form-control" type="text">
+                            <button class="btn btn-primary" onclick="q3Main()">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 4 -->
+            <div class="accordion-item" id="question4">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <header>
+                            <h2>Question 4</h2>
+                            <p><b>(<u>Compulsory Question</u>)</b></p>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p><b>(<u>Compulsory Question</u>)</b></p>
+                        <p style="margin-top:-20px;">You need to plan a road trip. You are traveling at an average speed
+                            of <b>40 miles an hour.</b></p>
+                        <p style="margin-top:-20px;">Given a distance in miles as input (the code to take input is
+                            already present), output to the console the time it will take you to voer it <b>in
+                                minutes.</b></p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">150</p>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">225</p>
+                        <button class="btn btn-primary" onclick="location.href='./Q/4.html'">Answer</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 5 -->
+            <div class="accordion-item" id="question5">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        <header>
+                            <h2>Question 5</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>The current world record for high jumping is 2.45 meters.</p>
+                        <p style="margin-top:-20px;">You are given a program that receives as input a number that
+                            represents the height of the jump.</p>
+                        <br>
+                        <p><b>Task</b></p>
+                        <p style="margin-top:-20px;">Complete the code to:</p>
+                        <p style="margin-top:-20px;">1. output to the console <b>"bew record"</b> if the number is
+                            <b>more than 2.45,</b>
+                        </p>
+                        <p style="margin-top:-20px">2. out put to the console <b>"not this time"</b> in other cases.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">2.49</p>
+                        <br>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">new record</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 6 -->
+            <div class="accordion-item" id="question6">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        <header>
+                            <h2>Question 6</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>The user can choose the color theme for the browser</p>
+                        <ol>
+                            <li>
+                                <p style="margin-top:-20px;">Light</p>
+                            </li>
+                            <li>
+                                <p style="margin-top:-20px;">Dark</p>
+                            </li>
+                            <li>
+                                <p style="margin-top:-20px;">Nocturne</p>
+                            </li>
+                            <li>
+                                <p style="margin-top:-20px;">Terminal</p>
+                            </li>
+                            <li>
+                                <p style="margin-top:-20px;">Indigo</p>
+                            </li>
+                        </ol>
+                        <br>
+                        <p>You are given a program that takes the number as input. Complete the program so that it will
+                            output to the console the theme according to input number.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">2</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">Dark</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 7 -->
+            <div class="accordion-item" id="question7">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        <header>
+                            <h2>Question 7</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Complete the code to output the given expression 15 times.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">Learning is fun!</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">Learning is fun!</p>
+                        <p style="margin-top:-20px;">Learning is fun!</p>
+                        <p style="margin-top:-20px;">Learning is fun!</p>
+                        <p style="margin-top:-20px;">Continue...</p>    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="accordion-item" id="question8">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        <header>
+                            <h2>Question 8</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Many tall buildings, including hotels, skip the number 13 when numbering floors often going from floor 12 to floor 14. It is thought that the number 13 is unlucky.</p>
+                        <p>Write a program that will number 15 rooms starting from 1, skipping the number 13. Output to the console each room number in seperate line.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="accordion-item" id="question9">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        <header>
+                            <h2>Question 9</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Sometimes it's very useful to set reminder to heelp you accomplish all of your tasks.</p>
+                        <p>The program you are given take an event as input.</p>
+                        <p>Complete the function-reminder to take that event as argument and out the corresponding message.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">Workout</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">You set a reminder about workout</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="accordion-item" id="question10">
+                <h2 class="accordion-header" id="headingTen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                        <header>
+                            <h2>Question 10</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a JavaScript function that takes two boolean values as an argument and returns true if the number is greater than or equal to 10 and less than or equal to 20, false otherwise, Use the && operators.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="accordion-item" id="question11">
+                <h2 class="accordion-header" id="headingEleven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                        <header>
+                            <h2>Question 11</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a JavaScript function that takes two boolean valuse as arguments and returns true if both values are false, false otherwise. Use the ! and && operators.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 12 -->
+            <div class="accordion-item" id="question12">
+                <h2 class="accordion-header" id="headingTwelve">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                        <header>
+                            <h2>Question 12</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>You are given a program that takes Team 1 and Team 2 football teams goals as inputs accordingly.</p>
+                        <p>Complete the function to take Team 1 and Team 2 goals <strong>as arguments</strong> and output the final result of the match:</p>
+                        <br>
+                        <ul>
+                            <Strong><li>"Team 1 won"</Strong>, if Team 1's score is higher tha Team 2's score.</li>
+                            <Strong><li>"Team 2 won"</Strong>, if Team 2's score is higher tha Team 1's score.</li>
+                            <Strong><li>"Draw"</Strong>, if the scores are equal.</li>
+                        </ul>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">3</p>
+                        <p style="margin-top:-20px;">4</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">Team 2 won</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="accordion-item" id="question13">
+                <h2 class="accordion-header" id="headingThirteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                        <header>
+                            <h2>Question 13</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>You are given a program that takes 3 numbers as input.</p>
+                        <p>Complete the given function to calculate the average of those 3 numbers, assign it to the given variable, and output it.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">3</p>
+                        <p style="margin-top:-20px;">6</p>
+                        <p style="margin-top:-20px;">9</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">6</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="accordion-item" id="question14">
+                <h2 class="accordion-header" id="headingFourteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">
+                        <header>
+                            <h2>Question 14</h2>
+                            <p><b>(<u>Compulsory Question</u>)</b></p>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseFourteen" class="accordion-collapse collapse" aria-labelledby="headingFourteen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>You are making a currency converter app.</p>
+                        <p>Create a function called <strong>convert</strong>, which takes two parameters: the amount to convert, and the rate, and returns the resulting amount.</p>
+                        <p>The code to take the parameters as input and call the function is already present in the Playground.</p>
+                        <p>Create the function to make the code work.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">100</p>
+                        <p style="margin-top:-20px;">1.1</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">110</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="accordion-item" id="question15">
+                <h2 class="accordion-header" id="headingFifteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                        <header>
+                            <h2>Question 15</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>The given object represents a cuboid (e.g. a rectangular prism) that ocntains the properties of length, width, and height.</p>
+                        <p>Complete the program to calculate and output the volume of given cuboid to the console.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="accordion-item" id="question16">
+                <h2 class="accordion-header" id="headingSixteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                        <header>
+                            <h2>Question 16</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Complete the given program by fixing the constructor, making a flight object, and assign it to given variable to correctly execute the corresponding message:</p>
+                        <p>Flight ID and the flight status(landed, on time, delayed, etc) are taken as input.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">NGT 929</p>
+                        <p style="margin-top:-20px;">landed</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">Flight NGT 929 has landed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 17 -->
+            <div class="accordion-item" id="question17">
+                <h2 class="accordion-header" id="headingSeventeen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                        <header>
+                            <h2>Question 17</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>The array you are given represents the menu of breakfast options available at the hotel.</p>
+                        <p>The Chef decided to replace on of th options with "Fluffy Pancakes".</p>
+                        <p>Write a program to take the index as input, replace the element with that index with "Fluffy Pancakes", and output the new menu to the console as an array.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">2</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">['Cinnamon Doughnuts','Waffles','FluffyPancakes','Chorizo Burrity','French Toast']</p>
+                        <p>The element with index 2 has been replaced in the output array.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 18 -->
+            <div class="accordion-item" id="question18">
+                <h2 class="accordion-header" id="headingEighteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                        <header>
+                            <h2>Question 18</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Create a function that returns the century depending on the year given as a parameter.</p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">1993</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">20</p>
+                        <p><b>Hint</b></p>
+                        <p style="margin-top:-20px;">You need to divide 1993 by 100: 1993/100=19.93, then round it to the nearest integer, which is 20 in this case.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 19 -->
+            <div class="accordion-item" id="question19">
+                <h2 class="accordion-header" id="headingNineteen">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                        <header>
+                            <h2>Question 19</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>The program you are given takes<strong> year, month and day</strong> as input.</p>
+                        <p>Create a function that takes them as arguments and returns the corresponding day of the <strong>day of the week.</strong></p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">1993</p>
+                        <p style="margin-top:-20px;">7</p>
+                        <p style="margin-top:-20px;">12</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">Thursday</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 20 -->
+            <div class="accordion-item" id="question20">
+                <h2 class="accordion-header" id="headingTwenty">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwenty" aria-expanded="false" aria-controls="collapseTwenty">
+                        <header>
+                            <h2>Question 20</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>You are working on a Store Manager program, which stores the prices in an array.</p>
+                        <p>You need to add functionality to increase the prices by the given amount.</p>
+                        <p>The <strong>increase</strong> variable is taken from user input. You need to increase all the prices in the given array by that amount and output to the console the resulting array.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 21 -->
+            <div class="accordion-item" id="question21">
+                <h2 class="accordion-header" id="headingTwentyOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwentyOne" aria-expanded="false" aria-controls="collapseTwentyOne">
+                        <header>
+                            <h2>Question 21</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwentyOne"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a program that selects html element with id using javaScript Dom method methods and print that value.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 22 -->
+            <div class="accordion-item" id="question22">
+                <h2 class="accordion-header" id="headingTwentyTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo">
+                        <header>
+                            <h2>Question 22</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="headingTwentyTwo"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a program that takes a number as an input in html input box and there will be a button on that page also and when the user clicks on that button it prints the table of that number from 1 to 10. Example 2*1 =2 and so on. Where 2 is the inputted value.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 23 -->
+            <div class="accordion-item" id="question23">
+                <h2 class="accordion-header" id="headingTwentyThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwentyThree" aria-expanded="false" aria-controls="collapseTwentyThree">
+                        <header>
+                            <h2>Question 23</h2>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="headingTwentyThree"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a program that selects img element and change its src and alt attribute value.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 24 -->
+            <div class="accordion-item" id="question24">
+                <h2 class="accordion-header" id="headingTwentyFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
+                        <header>
+                            <h2>Question 24</h2>
+                            <p><b>(<u>Compulsory Question</u>)</b></p>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwentyFour"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a program that has two input boxes which will be of type password and there will be also a checkbox button which will hide and show password. Also there will be a check password button also which will check that the inputted passwords are same and inputted values are not blank.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Question 25 -->
+            <div class="accordion-item" id="question25">
+                <h2 class="accordion-header" id="headingTwentyFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
+                        <header>
+                            <h2>Question 25</h2>
+                            <p><b>(<u>Compulsory Question</u>)</b></p>
+                        </header>
+                    </button>
+                </h2>
+                <div id="collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="headingTwentyFive"
+                    data-bs-parent="#accordion">
+                    <div class="accordion-body">
+                        <p>Write a program that has a text and 3 buttons. The buttons name will be bold, italic, underline. When the user click on that button it will update the text style and when the user again clicks on that button it will undo that style also.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+    <footer class="bg-dark text-white py-3 mt-5 fixed-bottom">
+        <div class="container">
+            <p class="text-center mb-0">Copyright © 2023</p>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Include Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="./bundle/scripts/front-end.js"></script>
+    <script src="./bundle/scripts/functions.js"></script>
+</body>
+
+</html>
