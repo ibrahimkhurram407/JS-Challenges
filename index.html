@@ -62,6 +62,7 @@
         <button id="expand-all-button" type="button" class="btn btn-dark expand-btn">Expand/Collapse All</button>
         <div class="accordion" id="accordion" data-bs-spy="scroll" data-bs-target="navbar" data-bs-offset="500"
             tabindex="0">
+            <!-- Question 1 -->
             <div class="accordion-item" id="question1">
                 <h2 class="accordion-header" id="headingOne">
                     <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -98,6 +99,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Question 2 -->
             <div class="accordion-item" id="question2">
                 <h2 class="accordion-header" id="headingTwo">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -130,6 +132,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Question 3 -->
             <div class="accordion-item" id="question3">
                 <h2 class="accordion-header" id="headingThree">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -142,16 +145,25 @@
                 <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <p>Givn a clock that measures 24 hours in a day, write a program that takes the hour as input.
+                        <p>Given a clock that measures 24 hours in a day, write a program that takes the hour as input.
                             If the hour is in the rage of 0 to 12, output am to the console, and output pm if it's not.
                         </p>
                         <p><b>Sample Input</b></p>
                         <p style="margin-top:-20px;">13</p>
                         <p><b>Sample Output</b></p>
                         <p style="margin-top:-20px;">pm</p>
+                        <script src="./bundle/scripts/q3.js"></script>
+                        <div class="q3-result">
+                            <div>
+                                <h6>Enter Hour Digit</h6>
+                            </div>
+                            <input id="q3input" class="form-control" type="text">
+                            <button class="btn btn-primary" onclick="q3Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- Question 4 -->
             <div class="accordion-item" id="question4">
                 <h2 class="accordion-header" id="headingFour">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -180,6 +192,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Question 5 -->
             <div class="accordion-item" id="question5">
                 <h2 class="accordion-header" id="headingFive">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -211,6 +224,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Question 6 -->
             <div class="accordion-item" id="question6">
                 <h2 class="accordion-header" id="headingSix">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -547,7 +561,15 @@
                 <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>The program you are given takes<strong> year, month and day</strong> as input.</p>
+                        <p>Create a function that takes them as arguments and returns the corresponding day of the <strong>day of the week.</strong></p>
+                        <br>
+                        <p><b>Sample Input</b></p>
+                        <p style="margin-top:-20px;">1993</p>
+                        <p style="margin-top:-20px;">7</p>
+                        <p style="margin-top:-20px;">12</p>
+                        <p><b>Sample Output</b></p>
+                        <p style="margin-top:-20px;">Thursday</p>
                     </div>
                 </div>
             </div>
@@ -564,7 +586,9 @@
                 <div id="collapseTwenty" class="accordion-collapse collapse" aria-labelledby="headingTwenty"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>You are working on a Store Manager program, which stores the prices in an array.</p>
+                        <p>You need to add functionality to increase the prices by the given amount.</p>
+                        <p>The <strong>increase</strong> variable is taken from user input. You need to increase all the prices in the given array by that amount and output to the console the resulting array.</p>
                     </div>
                 </div>
             </div>
@@ -581,7 +605,7 @@
                 <div id="collapseTwentyOne" class="accordion-collapse collapse" aria-labelledby="headingTwentyOne"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>Write a program that selects html element with id using javaScript Dom method methods and print that value.</p>
                     </div>
                 </div>
             </div>
@@ -598,7 +622,7 @@
                 <div id="collapseTwentyTwo" class="accordion-collapse collapse" aria-labelledby="headingTwentyTwo"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>Write a program that takes a number as an input in html input box and there will be a button on that page also and when the user clicks on that button it prints the table of that number from 1 to 10. Example 2*1 =2 and so on. Where 2 is the inputted value.</p>
                     </div>
                 </div>
             </div>
@@ -615,7 +639,7 @@
                 <div id="collapseTwentyThree" class="accordion-collapse collapse" aria-labelledby="headingTwentyThree"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>Write a program that selects img element and change its src and alt attribute value.</p>
                     </div>
                 </div>
             </div>
@@ -626,13 +650,14 @@
                         data-bs-target="#collapseTwentyFour" aria-expanded="false" aria-controls="collapseTwentyFour">
                         <header>
                             <h2>Question 24</h2>
+                            <p><b>(<u>Compulsory Question</u>)</b></p>
                         </header>
                     </button>
                 </h2>
                 <div id="collapseTwentyFour" class="accordion-collapse collapse" aria-labelledby="headingTwentyFour"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>Write a program that has two input boxes which will be of type password and there will be also a checkbox button which will hide and show password. Also there will be a check password button also which will check that the inputted passwords are same and inputted values are not blank.</p>
                     </div>
                 </div>
             </div>
@@ -643,13 +668,14 @@
                         data-bs-target="#collapseTwentyFive" aria-expanded="false" aria-controls="collapseTwentyFive">
                         <header>
                             <h2>Question 25</h2>
+                            <p><b>(<u>Compulsory Question</u>)</b></p>
                         </header>
                     </button>
                 </h2>
                 <div id="collapseTwentyFive" class="accordion-collapse collapse" aria-labelledby="headingTwentyFive"
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
-                        <!-- Description here -->
+                        <p>Write a program that has a text and 3 buttons. The buttons name will be bold, italic, underline. When the user click on that button it will update the text style and when the user again clicks on that button it will undo that style also.</p>
                     </div>
                 </div>
             </div>
@@ -673,7 +699,7 @@
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
         crossorigin="anonymous"></script>
     <script src="./bundle/scripts/front-end.js"></script>
-
+    <script src="./bundle/scripts/functions.js"></script>
 </body>
 
 </html>

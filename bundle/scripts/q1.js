@@ -1,4 +1,10 @@
 let q1divCreated = false;
+let input = undefined;
+let AllowStatement = "It's AM";
+let RestrictionStatement = "It's PM";
+let ClassName = "q3-result";
+let ID = "AgeFactor";
+
 
 function q1Main() {
   let input = document.getElementById("q1input").value;
@@ -13,13 +19,15 @@ function q1Main() {
       result.appendChild(p);
       q1divCreated = true;
     } else {
-      document.getElementById("calculatedMonitors").innerHTML = `Calculated Result is ${monitors} Monitors`;
+      document.getElementById(
+        "calculatedMonitors"
+      ).innerHTML = `Calculated Result is ${monitors} Monitors`;
     }
   } else {
     // input is not an integer, show error message
     let errorMessage = document.createElement("p");
     errorMessage.innerText = "Error: input is not an integer";
     errorMessage.style.color = "red";
-    document.querySelector(".result").appendChild(errorMessage);
+    document.querySelector(ID).appendChild(errorMessage);
   }
 }

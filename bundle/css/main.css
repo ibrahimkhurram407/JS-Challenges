@@ -29,19 +29,19 @@ button {
     text-align: center;
 } */
 
-.q1-result, .q2-result {
+.q1-result, .q2-result, .q3-result{
     border-radius: 10px;
     border-color:chartreuse;
     border-style:dotted;
 }
 
-.q1-result, .q2-result{
+.q1-result, .q2-result, .q3-result{
     height: 200px;
     width: 400px;
     padding: 10px;
 }
 
-.q2-result, .q1-result {
+.q2-result, .q1-result, .q3-result {
     display: flex;
     flex-direction: column;
     text-align: center; 
@@ -49,18 +49,18 @@ button {
     align-items: center;
 }
 
-.q2-result div h6, .q1-result div h6{
+.q2-result div h6, .q1-result div h6, .q3-result div h6{
     width: 100%;
     margin-bottom: 50px;
     margin-top: 15px;
 }
 
-.q2-result input, .q1-result input {
+.q2-result input, .q1-result input, .q3-result input{
     border: solid rgb(128, 128, 128);
     border-width: 1px;
 }
 
-.q1-result button, .q2-result button{
+.q1-result button, .q2-result button, .q3-result button{
     width: 110px;
 }
 
