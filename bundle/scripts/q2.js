@@ -1,4 +1,4 @@
-let q2divCreated = false;
+let divCreated = false;
 let input = undefined;
 let AllowStatement = "You are an adult";
 let RestrictionStatement = "You are not an adult";
@@ -10,16 +10,11 @@ function q2Main() {
   if (Number.isInteger(parseInt(input))) {
     if (input > 18) {
       let restriction = false; //the user is an adult
+      kdc(restriction);
     } else if (input < 18) {
       let restriction = true; //the user is not an adult
+      kdc(restriction);
     }
-    let Statement = Q2Calculater(restriction);
-    updateResult(
-      Statement,
-      ClassName,
-      ID,
-      q2divCreated
-    );
   } else {
     // input is not an integer, show error message
     let errorMessage = document.createElement("p");
@@ -35,4 +30,14 @@ function Q2Calculater (restriction) {
   }else {
     return ("You are an Adult!")
   }
+}
+
+function kdc (restriction) {
+  let Statement = Q2Calculater(restriction);
+    updateResult(
+      Statement,
+      ClassName,
+      ID,
+      divCreated
+    );
 }

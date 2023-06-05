@@ -1,4 +1,4 @@
-let q3divCreated = false;
+let divCreated = false;
 let input = undefined;
 let AllowStatement = "It's AM";
 let RestrictionStatement = "It's PM";
@@ -15,7 +15,7 @@ function q3Main() {
         AllowStatement,
         ClassName,
         ID,
-        q3divCreated
+        divCreated
       );
     } else if (input < 18) {
       let restriction = true; //the user is not an adult
@@ -25,7 +25,7 @@ function q3Main() {
         AllowStatement,
         ClassName,
         ID,
-        q3divCreated
+        divCreated
       );
     }
   } else {
