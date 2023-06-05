@@ -1,31 +1,32 @@
-let divCreated = false;
-let input = undefined;
-let AllowStatement = "You are an adult";
-let RestrictionStatement = "You are not an adult";
-let ClassName = "q2-result";
-let ID = "AgeFactor";
+let q2_divCreated = false;
+let q2_input = undefined;
+let q2_AllowStatement = "You are an adult";
+let q2_RestrictionStatement = "You are not an adult";
+let q2_ClassName = "q2-result";
+let q2_ID = "q2input";
+document.getElementById
 
 function q2Main() {
-  let input = document.getElementById("q2input").value;
-  if (Number.isInteger(parseInt(input))) {
-    if (input > 18) {
-      let restriction = false; //the user is an adult
-      kdc(restriction);
-    } else if (input < 18) {
-      let restriction = true; //the user is not an adult
-      kdc(restriction);
+  q2_input = document.getElementById(q2_ID).value;
+  if (Number.isInteger(parseInt(q2_input))) {
+    if (q2_input > 18) {
+      let q2_restriction = false; //the user is an adult
+      kdc(q2_restriction);
+    } else if (q2_input < 18) {
+      let q2_restriction = true; //the user is not an adult
+      kdc(q2_restriction);
     }
   } else {
     // input is not an integer, show error message
-    let errorMessage = document.createElement("p");
-    errorMessage.innerText = "Error: input is not an integer";
-    errorMessage.style.color = "red";
-    document.querySelector(ID).appendChild(errorMessage);
+    let q2_errorMessage = document.createElement("p");
+    q2_errorMessage.innerText = "Error: input is not an integer";
+    q2_errorMessage.style.color = "red";
+    document.querySelector(q2_ID).appendChild(q2_errorMessage);
   }
 }
 
-function Q2Calculater (restriction) {
-  if (restriction === true) {
+function Q2Calculater (q2_restriction) {
+  if (q2_restriction === true) {
     return ("You are not an Adult!")
   }else {
     return ("You are an Adult!")
@@ -33,11 +34,11 @@ function Q2Calculater (restriction) {
 }
 
 function kdc (restriction) {
-  let Statement = Q2Calculater(restriction);
+  let q2_Statement = Q2Calculater(restriction);
     updateResult(
-      Statement,
-      ClassName,
-      ID,
-      divCreated
+      q2_Statement,
+      q2_ClassName,
+      q2_ID,
+      q2_divCreated
     );
 }
