@@ -14,3 +14,12 @@ function updateResult (result, ClassName, ID, divCreated){
       }
     }
   }
+
+  setInterval(removeErrorTags, 3000);
+
+  function removeErrorTags() {
+    let errorTags = document.querySelectorAll("p#error");
+    errorTags.forEach((tag)=> {
+      tag.remove();
+    });
+  }
