@@ -36,38 +36,32 @@ button {
     text-align: center;
 } */
 
-.q1-result, .q2-result, .q3-result{
+.question{
     border-radius: 10px;
     border-color:chartreuse;
     border-style:dotted;
-}
-
-.q1-result, .q2-result, .q3-result{
     height: 200px;
     width: 400px;
     padding: 10px;
-}
-
-.q2-result, .q1-result, .q3-result {
     display: flex;
     flex-direction: column;
-    text-align: center; 
+    text-align: center;
     justify-content: center;
     align-items: center;
 }
 
-.q2-result div h6, .q1-result div h6, .q3-result div h6{
+.question div h6{
     width: 100%;
     margin-bottom: 50px;
     margin-top: 15px;
 }
 
-.q2-result input, .q1-result input, .q3-result input{
+.question input{
     border: solid rgb(128, 128, 128);
     border-width: 1px;
 }
 
-.q1-result button, .q2-result button, .q3-result button{
+.question button{
     width: 110px;
 }
 

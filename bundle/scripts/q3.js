@@ -23,7 +23,6 @@ function q3Main() {
     } else {
       let isAdult = checkIfAdult(q3_input);
       let resultMessage = isAdult ? q3_RestrictionStatement : q3_AllowStatement;
-      console.log(q3_divCreated);
       q3_divCreated = updateResult(
         resultMessage,
         q3_ClassName,
