@@ -3,27 +3,29 @@ let q3_input = undefined;
 let q3_AllowStatement = "It's AM";
 let q3_RestrictionStatement = "It's PM";
 let q3_ClassName = "q3-result";
-let q3_ID = "q3input";
+let q3_ID = "AMPMDECIDER";
+
+function checkIfAdult(age) {
+  return age >= 11;
+}
 
 function q3Main() {
-  q3_input = document.getElementById(q3_ID).value;
+  q3_input = document.getElementById("q3input").value;
   if (Number.isInteger(parseInt(q3_input))) {
-    if (q3_input > 18) {
-      let q3_restriction = false; //the user is an adult
-      updateResult(
-        q3_restriction,
-        q3_RestrictionStatement,
-        q3_AllowStatement,
+    if (parseInt(q3_input) > 23) {
+      // input is bigger than 23, show error message
+      q3_divCreated = triggerError(
+        "Error: Number can't be bigger than 23",
         q3_ClassName,
         q3_ID,
         q3_divCreated
       );
-    } else if (q3_input < 18) {
-      let q3_restriction = true; //the user is not an adult
-      updateResult(
-        q3_restriction,
-        q3_RestrictionStatement,
-        q3_AllowStatement,
+    } else {
+      let isAdult = checkIfAdult(q3_input);
+      let resultMessage = isAdult ? q3_RestrictionStatement : q3_AllowStatement;
+      console.log(q3_divCreated);
+      q3_divCreated = updateResult(
+        resultMessage,
         q3_ClassName,
         q3_ID,
         q3_divCreated
@@ -31,9 +33,11 @@ function q3Main() {
     }
   } else {
     // input is not an integer, show error message
-    let q3_errorMessage = document.createElement("p");
-    q3_errorMessage.innerText = "Error: input is not an integer";
-    q3_errorMessage.style.color = "red";
-    document.querySelector(q3_ID).appendChild(q3_errorMessage);
+    q3_divCreated = triggerError(
+      "Error: input is not an integer",
+      q3_ClassName,
+      q3_ID,
+      q3_divCreated
+    );
   }
 }
