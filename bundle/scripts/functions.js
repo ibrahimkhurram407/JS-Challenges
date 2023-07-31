@@ -2,11 +2,27 @@ function updateResult(result, ClassName, ID, divCreated, add, times) {
   add = add || false;
   times = times || 15;
   if (add) {
+    hideError("div", ID);
     return loopResult(result, ClassName, ID, divCreated, times)
     exit
   } else {
+    hideError("p", ID);
     return showResult(result, ClassName, ID, divCreated);
     exit
+  }
+}
+
+function hideError(type, ID) {
+  if (type === "p") {
+    const errorP = document.getElementById('p:' + ID);
+    if (errorP) {
+      errorP.style.display = "none";
+    }
+  } else if (type === "div") {
+    const errorDiv = document.getElementById('div:' + ID);
+    if (errorDiv) {
+      errorDiv.style.display = "none";
+    }
   }
 }
 
@@ -65,7 +81,7 @@ function triggerError(error, parentClassname, resultID, divCreated) {
   let errorMessage = document.createElement("p");
   errorMessage.innerText = error;
   errorMessage.style.color = "red";
-  errorMessage.setAttribute("id", "error");
+  errorMessage.setAttribute("id", "p:" + resultID);
   document.getElementsByClassName(parentClassname)[0].appendChild(errorMessage);
   setTimeout(function () {
     removeError(parentClassname);

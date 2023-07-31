@@ -66,9 +66,15 @@ button {
     width: 110px;
 }
 
-.form-control {
-    width: 70%;
-    
+/* .form-control {
+    width: 70%;    
+} */
+
+.inputDiv {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .expand-btn {
