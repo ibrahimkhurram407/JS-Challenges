@@ -40,7 +40,8 @@ button {
     border-radius: 10px;
     border-color:chartreuse;
     border-style:dotted;
-    height: 200px;
+    padding: 20px 0px;
+    height: 100%;
     width: 400px;
     padding: 10px;
     display: flex;
