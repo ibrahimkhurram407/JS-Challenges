@@ -66,11 +66,11 @@ function showResult(result, ClassName, ID, divCreated) {
 
 function triggerError(error, parentClassname, resultID, divCreated) {
   console.log(
-    "triggering error with this parameters: " +
-      error +
-      parentClassname +
-      resultID +
-      divCreated
+    "triggering error with this parameters: " + " | " +
+      error + " | " +
+      parentClassname + " | " +
+      resultID + " | " +
+      divCreated +  " | "
   );
   if (divCreated) {
     let rm = document.getElementById(resultID);
@@ -84,17 +84,16 @@ function triggerError(error, parentClassname, resultID, divCreated) {
   errorMessage.setAttribute("id", "p:" + resultID);
   document.getElementsByClassName(parentClassname)[0].appendChild(errorMessage);
   setTimeout(function () {
-    removeError(parentClassname);
+    removeError(parentClassname, "p:" + resultID);
   }, 3000);
   return divCreated;
 }
 
-function removeError(parentClassname, tag) {
+function removeError(parentClassname, errorID) {
   var parent = document.getElementsByClassName(parentClassname)[0];
-  let errorTags = document.querySelectorAll("p#error");
-  errorTags.forEach((tag) => {
-    if (tag && tag.parentNode === parent) {
-      parent.removeChild(tag); // Remove the <p> tag with the id "error" from the parent div.
-    }
-  });
+  console.log(errorID);
+  let errorTag = document.getElementById(errorID);
+  if (errorTag && errorTag.parentNode === parent) {
+    parent.removeChild(errorTag); // Remove the <p> tag with the id "error" from the parent div.
+  }
 }

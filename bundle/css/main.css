@@ -70,6 +70,41 @@ button {
     width: 70%;    
 } */
 
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Style the custom checkbox when checked */
+  input[type="checkbox"]:checked {
+    background-color: #007bff; /* Change the background color when checked */
+    border-color: #007bff; /* Change the border color when checked */
+  }
+  
+  /* Style the checkmark inside the custom checkbox */
+  input[type="checkbox"]:checked::before {
+    content: "\2713"; /* Unicode checkmark character */
+    display: block;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  /* Add some margin between the checkboxes */
+  input[type="checkbox"] + input[type="checkbox"] {
+    margin-left: 10px;
+  }
+  
+
 .inputDiv {
     padding: 10px;
     display: flex;
