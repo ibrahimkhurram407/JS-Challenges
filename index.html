@@ -317,7 +317,7 @@
                         <script defer src="./bundle/scripts/q7.js"></script>
                         <div class="q7-result question">
                             <div>
-                                <h6>Enter Theme Selection as an integer.</h6>
+                                <h6>Enter raw text to print it 15 times.</h6>
                             </div>
                             <input id="q7input" class="form-control" type="text">
                             <button class="btn btn-primary" onclick="q7Main()">Calculate</button>
@@ -343,13 +343,13 @@
                             from floor 12 to floor 14. It is thought that the number 13 is unlucky.</p>
                         <p>Write a program that will number 15 rooms starting from 1, skipping the number 13. Output to
                             the console each room number in seperate line.</p>
-                            <script defer src="./bundle/scripts/q8.js"></script>
-                            <div class="q8-result question">
-                                <div>
-                                    <h6>Press Calculate to run the function</h6>
-                                </div>
-                                <button class="btn btn-primary" onclick="q8Main()">Calculate</button>
+                        <script defer src="./bundle/scripts/q8.js"></script>
+                        <div class="q8-result question">
+                            <div>
+                                <h6>Press Calculate to run the function</h6>
                             </div>
+                            <button class="btn btn-primary" onclick="q8Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -404,17 +404,17 @@
                         <p>Write a JavaScript function that takes two boolean values as an argument and returns true if
                             the number is greater than or equal to 10 and less than or equal to 20, false otherwise, Use
                             the && operators.</p>
-                            <script defer src="./bundle/scripts/q10.js"></script>
-                            <div class="q10-result question">
-                                <div>
-                                    <h6>Enter Respected Integers in chronological order.</h6>
-                                </div>
-                                <div class="inputDiv">
-                                    <input id="q10input1" type="checkbox">
-                                    <input style="margin-left: 10px;" id="q10input2" type="checkbox">
-                                </div>
-                                <button class="btn btn-primary" onclick="q10Main()">Calculate</button>
+                        <script defer src="./bundle/scripts/q10.js"></script>
+                        <div class="q10-result question">
+                            <div>
+                                <h6>Enter Respected Integers in chronological order.</h6>
                             </div>
+                            <div class="inputDiv">
+                                <input id="q10input1" type="checkbox">
+                                <input style="margin-left: 10px;" id="q10input2" type="checkbox">
+                            </div>
+                            <button class="btn btn-primary" onclick="q10Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -434,17 +434,17 @@
                     <div class="accordion-body">
                         <p>Write a JavaScript function that takes two boolean valuse as arguments and returns true if
                             both values are false, false otherwise. Use the ! and && operators.</p>
-                            <script defer src="./bundle/scripts/q11.js"></script>
-                            <div class="q11-result question">
-                                <div>
-                                    <h6>Enter Respected Integers in chronological order.</h6>
-                                </div>
-                                <div class="inputDiv">
-                                    <input id="q11input1" type="checkbox">
-                                    <input style="margin-left: 10px;" id="q11input2" type="checkbox">
-                                </div>
-                                <button class="btn btn-primary" onclick="q11Main()">Calculate</button>
+                        <script defer src="./bundle/scripts/q11.js"></script>
+                        <div class="q11-result question">
+                            <div>
+                                <h6>Enter Respected Integers in chronological order.</h6>
                             </div>
+                            <div class="inputDiv">
+                                <input id="q11input1" type="checkbox">
+                                <input style="margin-left: 10px;" id="q11input2" type="checkbox">
+                            </div>
+                            <button class="btn btn-primary" onclick="q11Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -490,7 +490,8 @@
                             </div>
                             <div class="inputDiv">
                                 <input id="q12input1" class="form-control" type="text" placeholder="Team 1">
-                                <input style="margin-left:10px;" id="q12input2" class="form-control" type="text" placeholder="Team 2">
+                                <input style="margin-left:10px;" id="q12input2" class="form-control" type="text"
+                                    placeholder="Team 2">
                             </div>
                             <button class="btn btn-primary" onclick="q12Main()">Calculate</button>
                         </div>
@@ -569,8 +570,9 @@
                                 <h6>Input the integers to calculate Average</h6>
                             </div>
                             <div class="inputDiv">
-                                <input id="q14input1" class="form-control" type="text">
-                                <input style="margin-left:10px;" id="q14input2" class="form-control" type="text">
+                                <input id="q14input1" class="form-control" type="text" placeholder="Amount">
+                                <input style="margin-left:10px;" id="q14input2" class="form-control" type="text"
+                                    placeholder="Rate">
                             </div>
                             <button class="btn btn-primary" onclick="q14Main()">Calculate</button>
                         </div>
@@ -594,6 +596,20 @@
                         <p>The given object represents a cuboid (e.g. a rectangular prism) that ocntains the properties
                             of length, width, and height.</p>
                         <p>Complete the program to calculate and output the volume of given cuboid to the console.</p>
+                        <script src="./bundle/scripts/q15.js"></script>
+                        <div class="q15-result question">
+                            <div>
+                                <h6>Input the measurements to measure volume of Cuboid</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q15input1" class="form-control" type="text" placeholder="Height">
+                                <input style="margin-left:10px;" id="q15input2" class="form-control" type="text"
+                                    placeholder="Width">
+                                <input style="margin-left:10px;" id="q15input3" class="form-control" type="text"
+                                    placeholder="Length">
+                            </div>
+                            <button class="btn btn-primary" onclick="q15Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -620,6 +636,18 @@
                         <p style="margin-top:-20px;">landed</p>
                         <p><b>Sample Output</b></p>
                         <p style="margin-top:-20px;">Flight NGT 929 has landed.</p>
+                        <script src="./bundle/scripts/q16.js"></script>
+                        <div class="q16-result question">
+                            <div>
+                                <h6>Input the measurements to measure volume of Cuboid</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q16input1" class="form-control" type="text" placeholder="Flight ID">
+                                <input style="margin-left:10px;" id="q16input2" class="form-control" type="text"
+                                    placeholder="Status">
+                            </div>
+                            <button class="btn btn-primary" onclick="q16Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -637,7 +665,7 @@
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
                         <p>The array you are given represents the menu of breakfast options available at the hotel.</p>
-                        <p>The Chef decided to replace on of th options with "Fluffy Pancakes".</p>
+                        <p>The Chef decided to replace one of the options with "Fluffy Pancakes".</p>
                         <p>Write a program to take the index as input, replace the element with that index with "Fluffy
                             Pancakes", and output the new menu to the console as an array.</p>
                         <br>
@@ -647,6 +675,16 @@
                         <p style="margin-top:-20px;">['Cinnamon Doughnuts','Waffles','FluffyPancakes','Chorizo
                             Burrity','French Toast']</p>
                         <p>The element with index 2 has been replaced in the output array.</p>
+                        <script src="./bundle/scripts/q17.js"></script>
+                        <div class="q17-result question">
+                            <div>
+                                <h6>Input the measurements to measure volume of Cuboid</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q17input" class="form-control" type="text" placeholder="Element Index">
+                            </div>
+                            <button class="btn btn-primary" onclick="q17Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -672,6 +710,16 @@
                         <p><b>Hint</b></p>
                         <p style="margin-top:-20px;">You need to divide 1993 by 100: 1993/100=19.93, then round it to
                             the nearest integer, which is 20 in this case.</p>
+                        <script src="./bundle/scripts/q18.js"></script>
+                        <div class="q18-result question">
+                            <div>
+                                <h6>Input the measurements to measure volume of Cuboid</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q18input" class="form-control" type="text" placeholder="Year">
+                            </div>
+                            <button class="btn btn-primary" onclick="q18Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -690,7 +738,8 @@
                     <div class="accordion-body">
                         <p>The program you are given takes<strong> year, month and day</strong> as input.</p>
                         <p>Create a function that takes them as arguments and returns the corresponding day of the
-                            <strong>day of the week.</strong></p>
+                            <strong>day of the week.</strong>
+                        </p>
                         <br>
                         <p><b>Sample Input</b></p>
                         <p style="margin-top:-20px;">1993</p>
@@ -698,6 +747,20 @@
                         <p style="margin-top:-20px;">12</p>
                         <p><b>Sample Output</b></p>
                         <p style="margin-top:-20px;">Thursday</p>
+                        <script src="./bundle/scripts/q19.js"></script>
+                        <div class="q19-result question">
+                            <div>
+                                <h6>Input the date in integers format yyyy/mm/dd.</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q19input1" class="form-control" type="text" placeholder="Year">
+                                <input id="q19input2" class="form-control" type="text" placeholder="Month"
+                                    style="margin-left:10px;">
+                                <input id="q19input3" class="form-control" type="text" placeholder="Date"
+                                    style="margin-left:10px;">
+                            </div>
+                            <button class="btn btn-primary" onclick="q19Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -718,6 +781,16 @@
                         <p>You need to add functionality to increase the prices by the given amount.</p>
                         <p>The <strong>increase</strong> variable is taken from user input. You need to increase all the
                             prices in the given array by that amount and output to the console the resulting array.</p>
+                        <script src="./bundle/scripts/q20.js"></script>
+                        <div class="q20-result question">
+                            <div>
+                                <h6>Enter the amount to increase price by.</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q20input" class="form-control" type="text" placeholder="Amount">
+                            </div>
+                            <button class="btn btn-primary" onclick="q20Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -736,6 +809,16 @@
                     <div class="accordion-body">
                         <p>Write a program that selects html element with id using javaScript Dom method methods and
                             print that value.</p>
+                        <script src="./bundle/scripts/q21.js"></script>
+                        <div class="q21-result question">
+                            <div>
+                                <h6>Enter Raw text to print it.</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q21input" class="form-control" type="text" placeholder="Amount">
+                            </div>
+                            <button class="btn btn-primary" onclick="q21Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -755,6 +838,16 @@
                         <p>Write a program that takes a number as an input in html input box and there will be a button
                             on that page also and when the user clicks on that button it prints the table of that number
                             from 1 to 10. Example 2*1 =2 and so on. Where 2 is the inputted value.</p>
+                        <script src="./bundle/scripts/q22.js"></script>
+                        <div class="q22-result question">
+                            <div>
+                                <h6>Enter the Integer of which you want the Times Table Printed</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <input id="q22input" class="form-control" type="text" placeholder="Times Table Integer">
+                            </div>
+                            <button class="btn btn-primary" onclick="q22Main()">Calculate</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -772,6 +865,17 @@
                     data-bs-parent="#accordion">
                     <div class="accordion-body">
                         <p>Write a program that selects img element and change its src and alt attribute value.</p>
+                        <script src="./bundle/scripts/q23.js"></script>
+                        <div class="q23-result question">
+                            <div>
+                                <h6>Click on the Change Button</h6>
+                            </div>
+                            <div class="inputDiv">
+                                <img src="https://todaysparent.mblycdn.com/tp/resized/2017/06/1200x630/when-your-kid-becomes-a-meme.jpg"
+                                    style="height: 200px; max-width: 100%;" alt="meme4">
+                                <button class="btn btn-primary" onclick="q23Main()">Calculate</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -793,6 +897,24 @@
                             also a checkbox button which will hide and show password. Also there will be a check
                             password button also which will check that the inputted passwords are same and inputted
                             values are not blank.</p>
+                        <script src="./bundle/scripts/q24.js"></script>
+                        <div class="q24-result question">
+                            <div>
+                                <h6>Input the measurements to measure volume of Cuboid</h6>
+                            </div>
+                            <div class="input-div">
+                                <form action="">
+                                    <input type="password" id="q24_password1" class="password form-control"
+                                        placeholder="Enter password 1">
+                                    <input type="password" id="q24_password2" class="password form-control"
+                                        placeholder="Enter password 2">
+                                    <input type="checkbox" id="q24_showPassword" style="margin-top: 15px;"
+                                        onchange="togglePasswordVisibility()">
+                                    <label for="q24_showPassword">Show Password</label>
+                                </form>
+                            </div>
+                            <button onclick="checkPasswords()" class="btn btn-primary">Check Password</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -813,10 +935,21 @@
                         <p>Write a program that has a text and 3 buttons. The buttons name will be bold, italic,
                             underline. When the user click on that button it will update the text style and when the
                             user again clicks on that button it will undo that style also.</p>
+                        <script src="./bundle/scripts/q25.js"></script>
+                        <div class="q25-result question">
+                            <div>
+                                <h6>Input the measurements to measure volume of Cuboid</h6>
+                            </div>
+                            <div class="input-div">
+                                <p id="q25_text">This is a sample text.</p>
+                                <button class="btn btn-primary btn-sm" onclick="toggleStyle('bold')">Bold</button>
+                                <button class="btn btn-dark btn-sm" onclick="toggleStyle('italic')">Italic</button>
+                                <button class="btn btn-success btn-sm" onclick="toggleStyle('underline')">Underline</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
 
 
